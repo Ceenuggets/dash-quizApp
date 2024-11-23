@@ -34,4 +34,4 @@ app.layout = dbc.Container([
 ], className="index", fluid=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)

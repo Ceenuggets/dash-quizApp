@@ -13,7 +13,7 @@ dash.register_page(__name__, name="Flag Quiz", path="/")
 
 
 def select_random_countries(countries_df):
-    print(countries_df)
+    # print(countries_df)
     select_countries = []
     n = 0
     while n < 10:
@@ -48,7 +48,7 @@ layout = dbc.Row([
             dbc.Col([
                 html.Div([
                     html.Div([
-                        html.Div("Country Flag Identification", id="title"),
+                        html.Div("Flag Identification", id="title"),
                         html.Div(id="report"),
                         html.Div(id="test_result"),
                     ], id="result_display"),

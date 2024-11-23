@@ -134,7 +134,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 500px) {
     .fq #flag_question_display {
         flex-direction: column;
     }
@@ -155,6 +155,12 @@
         object-fit: cover;
         width: 100%;
         height: 250px;
+    }
+    .fq #result_display{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
