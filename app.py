@@ -23,7 +23,7 @@ app.layout = dbc.Container([
                                       )],
                          className="me-5 link-div ",
                          ) for page in dash.page_registry.values()
-            ], className="d-flex flex-row justify-content-center nav-bar-div",
+            ], className="d-flex flex-row justify-content-evenly nav-bar-div",
             ),
 
             dash.page_container
