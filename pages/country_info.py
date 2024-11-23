@@ -55,9 +55,7 @@ layout = dbc.Row([
                     ], id="options_div"),
                 ], id="question_options_div"),
                 html.Div([
-                    html.Div([
-
-                    ], id="country_table"),
+                  
                     html.Div([
                         html.Div([
                             html.Img(id="country_img")
@@ -65,7 +63,10 @@ layout = dbc.Row([
                         html.Div([
 
                         ], id="indpndnc_date")
-                    ], id="country_more_info")
+                    ], id="country_more_info"),
+                      html.Div([
+
+                    ], id="country_table"),
                 ], id="country_table_and_flag"),
                 html.Div([
 
