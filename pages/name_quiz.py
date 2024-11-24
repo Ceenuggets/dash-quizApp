@@ -54,7 +54,7 @@ layout = dbc.Row([
 
                         ], id="info_div"),
                         html.Hr(),
-                        html.Label("Guess a word:", style={'fontSize': '18px'}),
+                        html.Label("Guess a letter:", style={'fontSize': '18px'}),
                         dcc.Input(
                             id="user_input",
                             type="text",
@@ -131,7 +131,7 @@ def display_result(user_input, new_interaction, store_masked_output, store_plain
             print(guess_outcome)
             if guess_outcome.lower() == store_plain_output.lower():
                 country_capital = countries_info.loc[countries_info["Country"] == store_plain_output]["Capital"]
-                print("match found, hurray!")
+                # print("match found!")
                 # print(store_plain_output)
                 # print(countries[store_plain_output])
                 return (store_plain_output, True, guess_outcome, store_plain_output, store_guessed_letters, False,

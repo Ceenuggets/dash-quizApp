@@ -120,6 +120,9 @@
 
 .nq .guessed_letters{
     font-size: 15px;
+    white-space: normal; 
+    word-wrap: break-word;    
+    overflow-wrap: break-word;
 }
 
 .nq .min-attempts{
