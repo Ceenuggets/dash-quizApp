@@ -9,6 +9,12 @@
     align-items: center;
 }
 
+.nq .label_input_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nq #result_flag{
     display: flex;
     flex-direction: row;

@@ -54,15 +54,18 @@ layout = dbc.Row([
 
                         ], id="info_div"),
                         html.Hr(),
-                        html.Label("Guess a letter:", style={'fontSize': '18px'}),
-                        dcc.Input(
-                            id="user_input",
-                            type="text",
-                            # placeholder="Guess a word",
-                            style={'margin': '10px'},
-                            maxLength=1,
-                            pattern=".{1,1}",
-                        ),
+                        html.Div([
+                            html.Label("Guess a letter:", style={'fontSize': '18px'}),
+                            dcc.Input(
+                                id="user_input",
+                                type="text",
+                                # placeholder="Guess a word",
+                                # style={'margin': '10px'},
+                                maxLength=1,
+                                pattern=".{1,1}",
+                            ),
+                        ], className="label_input_div"),
+                        
                     ])
                 ], id="input_div")
             ], xs=12, sm=12, md=12, lg=12, xl=12,
