@@ -19,7 +19,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 .ci #question_div{
     display: flex;
@@ -52,12 +52,12 @@
 }
 
 .ci #country_table{
+    width: 100%;
+    margin-bottom: 4px;
     background-color: #013a63;
     font-weight: bold;
     border-radius: 5px;
 }
-
-
 
 .ci Tbody Td{
     padding-left: 5px;
@@ -70,15 +70,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
 }
 
-.ci #country_table{
-    /* flex: 1; */
+/* .ci #country_table{
+    flex: 1;
     width: 100%;
-    margin-right: 5px;
-}
+    margin-bottom: 4px;
+} */
+
 
 .ci #country_more_info{
     display: flex;
@@ -86,16 +85,15 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    background-color: #2a6f97;
+    width: 100%;
+    background-color: #012a4a;
     border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;   
 }
 
 .ci #country_img{
     margin: 5px;
-}
-
-.ci #country_more_info{
-  background-color: darkgrey;
 }
 
 
@@ -110,8 +108,7 @@
 .ci #indpndnc_date{
     background-color: #01497c;
     border-radius: 5px;
-    margin-bottom: 5px;
-    width: 96%;
+    width: 100%;
 
 }
 
@@ -121,8 +118,7 @@
     text-align: center;
     font-weight: bold;
     margin-top: 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top: 1px darkcyan solid;
 
 }
 
@@ -177,5 +173,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .ci #country_more_info{
+        margin-left: 0;
     }
 }
