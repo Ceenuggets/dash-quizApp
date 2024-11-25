@@ -179,7 +179,6 @@ def display_result(user_input, new_interaction, store_masked_output, store_plain
                     {"width": "0", "height": "0"},
                     )
 
-
 clientside_callback(
     """
     function(value) {
@@ -188,9 +187,30 @@ clientside_callback(
             inputElem.focus();
             inputElem.select();
         }
-        return value;
+
+        if (value){
+        return value[value.length - 1];
+        }
+        return '';
     }
     """,
     Output("store_content", "data"),
     Input("user_input", "value")
 )
+
+
+
+# clientside_callback(
+#     """
+#     function(value) {
+#         var inputElem = document.getElementById('user_input');
+#         if (inputElem) {
+#             inputElem.focus();
+#             inputElem.select();
+#         }
+#         return value;
+#     }
+#     """,
+#     Output("store_content", "data"),
+#     Input("user_input", "value")
+# )
